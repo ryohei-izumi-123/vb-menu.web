@@ -1,0 +1,94 @@
+/* stylelint-disable */
+@charset 'UTF-8';
+div {
+  &.preloader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99999;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: var(--main-bg-color);
+    opacity: 0.9;
+  }
+
+  &.preloader {
+    margin: 0;
+    padding: 0;
+    font-family: 'FM Bolyar Pro';
+    font-weight: 900;
+    font-size: 1.1em;
+    color: var(--main-text-color);
+    > span {
+      position: relative;
+      top: 0.63em;
+      display: inline-block;
+      text-transform: uppercase;
+      text-decoration: none;
+      opacity: 0;
+      transform: rotateX(-90deg);
+      &.preloader-item1 {
+        animation: preload 1.2s ease-in-out infinite;
+        animation-delay: 1.2s;
+      }
+
+      &.preloader-item2 {
+        animation: preload 1.2s ease-in-out infinite;
+        animation-delay: 1.3s;
+      }
+
+      &.preloader-item3 {
+        animation: preload 1.2s ease-in-out infinite;
+        animation-delay: 1.4s;
+      }
+
+      &.preloader-item4 {
+        animation: preload 1.2s ease-in-out infinite;
+        animation-delay: 1.5s;
+      }
+
+      &.preloader-item5 {
+        animation: preload 1.2s ease-in-out infinite;
+        animation-delay: 1.6s;
+      }
+
+      &.preloader-item6 {
+        animation: preload 1.2s ease-in-out infinite;
+        animation-delay: 1.7s;
+      }
+
+      &.preloader-item7 {
+        animation: preload 1.2s ease-in-out infinite;
+        animation-delay: 1.8s;
+      }
+    }
+  }
+}
+
+@keyframes preload {
+  10% {
+    opacity: 0.5;
+  }
+  20% {
+    opacity: 1;
+    top: 3.78em;
+    transform: rotateX(-360deg);
+  }
+  80% {
+    opacity: 1;
+    top: 3.78em;
+    transform: rotateX(-360deg);
+  }
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    top: 6.94em;
+  }
+}
+
